@@ -1,11 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# RELAX OLUCANNNN
+# ÇALMAOC
+# L9GA
+# XORN
+# /KELES
+# KATIRINISKMM
+# TÜM ANTİKEMALİSTLERİN AMK
+# Sana hiç sahip olmadım ama unutamadım da… 
+#ELİN OGLU MUTLU ETSİN SENİ BER211
 
 import json
+# XORN
+# /KELES
 import os
+# XORN
+# /KELES
 import re
+# XORN
+# /KELES
 import sys
+# XORN
+# /KELES
 import time
+# XORN
+# /KELES
 from datetime import datetime, timezone
 from pathlib import Path
 from textwrap import dedent
@@ -15,16 +34,19 @@ try:
 except ImportError:
     print("requests modülü yüklü değil. Kurmak için:\n\n    pip install requests\n")
     sys.exit(1)
-
+# XORN
+# /KELES
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_PATH = BASE_DIR / "data_files"
 HISTORY_PATH = BASE_DIR / "history"
 EXPORT_PATH = BASE_DIR / "exports"
-
+# XORN
+# /KELES
 for p in [HISTORY_PATH, EXPORT_PATH]:
     p.mkdir(exist_ok=True)
-
+# XORN
+# /KELES
 
 RESET = "\033[0m"
 BOLD = "\033[1m"
@@ -35,14 +57,19 @@ RED = "\033[91m"
 YELLOW = "\033[93m"
 MAGENTA = "\033[95m"
 GREY = "\033[90m"
-
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
 DEFAULT_ANIM_SPEED = 0.02
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
 
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
 
 def slow_print(text: str, delay: float = None, end: str = "\n"):
     if delay is None:
@@ -54,7 +81,9 @@ def slow_print(text: str, delay: float = None, end: str = "\n"):
     sys.stdout.write(end)
     sys.stdout.flush()
 
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
 def progress_bar(label: str = "Progress", duration: float = 1.0, steps: int = 25):
     for i in range(steps + 1):
         filled = "█" * i
@@ -65,7 +94,9 @@ def progress_bar(label: str = "Progress", duration: float = 1.0, steps: int = 25
         time.sleep(duration / steps)
     print()
 
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
 def print_header(title: str):
     width = 70
     print(GREY + "-" * width + RESET)
@@ -77,7 +108,9 @@ def print_kv(key: str, value, indent: int = 2):
     space = " " * indent
     print(f"{space}{CYAN}{key}{RESET}: {value}")
 
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
 class DarkcordConfig:
     def __init__(self, path: Path):
         self.path = path
@@ -95,7 +128,9 @@ class DarkcordConfig:
                 self.data.update(json.loads(self.path.read_text(encoding="utf-8")))
             except Exception:
                 pass
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
     def save(self):
         try:
             self.path.write_text(json.dumps(self.data, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -166,7 +201,9 @@ class LocalDataStore:
         except Exception as e:
             print(f"{RED}[JSON HATA]{RESET} {path}: {e}")
             return {"users": []}
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
     def _load_ip_map(self, path: Path) -> dict:
         result = {}
         try:
@@ -265,7 +302,9 @@ class FindCordClient:
             return None
         return raw.get("user") or raw.get("data") or None
 
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
 class HistoryManager:
     def __init__(self, history_dir: Path):
         self.dir = history_dir
@@ -660,7 +699,9 @@ def main_menu():
             config.save()
             print("\n[OK] API key kaydedildi!")
             time.sleep(1)
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
     local_store = LocalDataStore(DATA_PATH)
     local_store.check_files()
     local_store.load_all()
@@ -681,7 +722,9 @@ def main_menu():
         print("6) Ayarlar")
         print("0) Çıkış")
         choice = input("\nSeçim: ").strip()
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
         if choice == "0":
             print("Çıkılıyor...")
             break
@@ -721,7 +764,20 @@ def main_menu():
             input("\nBulk scan bitti. ENTER ile geri dön...")
         elif choice == "6":
             settings_menu(config)
-
+# XORN
+# /KELES
+# https://l9ga.com.tr
 
 if __name__ == "__main__":
     main_menu()
+# XORN
+# /KELES
+# https://l9ga.com.tr# XORN
+# /KELES
+# https://l9ga.com.tr# XORN
+# /KELES
+# https://l9ga.com.tr# XORN
+# /KELES
+# https://l9ga.com.tr# XORN
+# /KELES
+# https://l9ga.com.tr
